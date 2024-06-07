@@ -1,0 +1,193 @@
+nav {
+    width: 50%;
+    height: 10vh;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-container .logo img {
+    width: 120px;
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.links .link {
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.links .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* helpsection */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(backgroundorder.png);
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.ContactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.ContactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.ContactUs .title h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact {
+    padding: 40px;
+    background: #F5F5DC;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact h3 {
+    color: #6E260E;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* form */
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.row100 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.row50 .inputBox {
+    width: 50%;
+}
+
+.inputBox span {
+    color: #6E260E;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.inputBox input, .inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea {
+    resize: none;
+    min-height: 88px; /* 4 lines approximately */
+    height: auto; /* Adjust height based on content */
+}
+
+.inputBox input[type="submit"] {
+    cursor: pointer;
+    background-color: #6E260E;
+    color: white;
+    border: none;
+}
+
+.inputBox input[type="submit"] {
+    cursor: pointer;
+    max-width: 120px;
+}
+
+/* info */
+.info {
+    background: #6E260E;
+    padding: 40px;
+    color: white; /* Added to make all text inside info white by default */
+}
+
+.info h3 {
+    color: #F5F5DC;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div p,
+.info .infoBox div a {
+    color: white; /* Ensure the specific text elements are white */
+    text-decoration: none;
+}
+.map{
+    padding:0;
+
+}
+.map iframe{
+    width:100%;
+    height:100%;
+}
